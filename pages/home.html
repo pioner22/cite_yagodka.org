@@ -1,0 +1,156 @@
+<div class="page">
+  <section class="shell">
+    <header class="layout-header">
+      <div class="logo-mark">
+        <span class="logo-dot"></span>
+        <span class="logo-text">Yagodka</span>
+      </div>
+      <nav class="nav">
+        <button class="nav-pill nav-pill-active" data-page="home" type="button">Обзор</button>
+        <button class="nav-pill" data-page="roadmap" type="button">Дорожная карта</button>
+      </nav>
+    </header>
+
+    <section class="layout-main">
+      <div class="headline">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span>Свой мессенджер для команды</span>
+        </div>
+        <h1 class="hero-title">
+          Ваше тихое место<br />
+          <span>для важных разговоров</span>
+        </h1>
+        <p class="hero-lead">
+          Yagodka сочетает личные беседы, групповые чаты и доски объявлений
+          в одном приложении. <span>Один сервер, один клиент</span> — и вся команда остаётся рядом.
+        </p>
+        <p class="hero-note">
+          Сейчас мы готовим публичный релиз: клиенты для iOS и Android, web‑версию с поддержкой PWA
+          и удобное подключение к серверу <strong>yagodka.org</strong>.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature">
+            <div class="feature-title">Доски и общий чат</div>
+            <div class="feature-text">
+              Публичные и приватные доски, общий канал для всей команды и
+              короткие ICQ‑подобные ID.
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-title">Личные сообщения</div>
+            <div class="feature-text">
+              ЛС только с подтверждёнными контактами, счётчики непрочитанного и
+              история, которая всегда сверяется с сервером.
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-title">Файлы и доски задач</div>
+            <div class="feature-text">
+              Отправка файлов через <code>/file</code>, прогресс загрузки,
+              хранение на сервере и доски, похожие на новостные ленты.
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-title">Готовность к продакшену</div>
+            <div class="feature-text">
+              MySQL, автоматические обновления клиента, проверка подписи диста и
+              HTTPS‑доступ к сайту <strong>yagodka.org</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="app-card">
+          <aside class="app-sidebar">
+            <div class="app-section-title">Доски</div>
+            <div class="chat-item chat-item-active">
+              <div class="chat-name">
+                <span>Запуск Yagodka</span>
+                <span>12</span>
+              </div>
+              <div class="chat-preview">Обновление клиента · файлы</div>
+            </div>
+            <div class="chat-item">
+              <div class="chat-name">
+                <span>Объявления</span>
+                <span>3</span>
+              </div>
+              <div class="chat-preview">Новый релиз · расписание</div>
+            </div>
+            <div class="app-section-title" style="margin-top:0.4rem;">Личные</div>
+            <div class="chat-item">
+              <div class="chat-name">
+                <span>@studio</span>
+                <span>online</span>
+              </div>
+              <div class="chat-preview">Макеты мобильного клиента</div>
+            </div>
+          </aside>
+
+          <div class="app-chat">
+            <div class="app-chat-header">
+              <div class="app-chat-meta">
+                <div class="app-chat-title"># общий</div>
+                <div class="app-chat-subtitle">24 участника · 120 непрочитанных</div>
+              </div>
+              <div class="app-chat-actions">
+                <span>🔍</span>
+                <span>⋮</span>
+              </div>
+            </div>
+
+            <div class="app-messages">
+              <div class="app-msg">
+                <div class="app-msg-title">Admin · Доска «Запуск»</div>
+                <div class="app-msg-text">
+                  Добро пожаловать на <span>yagodka.org</span>. Сервер готов принимать клиентов,
+                  доски и файлы.
+                </div>
+                <div class="app-msg-foot">
+                  <span>Сегодня · 10:24</span>
+                  <span>Доставлено · Прочитано</span>
+                </div>
+              </div>
+              <div class="app-msg">
+                <div class="app-msg-title">Design · ЛС</div>
+                <div class="app-msg-text">
+                  Добавил макеты для лендинга. Отправлю их на доску с помощью
+                  <span>/file ./export/hero.png</span>.
+                </div>
+                <div class="app-msg-foot">
+                  <span>Сегодня · 10:27</span>
+                  <span>Из клиента CLI</span>
+                </div>
+              </div>
+              <div class="app-msg app-msg-accent">
+                <div class="app-msg-title">Подключиться к серверу</div>
+                <div class="app-msg-text">
+                  <span>Скоро</span> это можно будет сделать прямо из приложений
+                  для iOS, Android и web‑версии.
+                </div>
+                <div class="app-msg-foot">
+                  <span>Черновик · предварительный вид</span>
+                  <span>v0.4.x</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="app-input">
+              <div class="app-input-inner">
+                <span class="app-input-icon">＋</span>
+                <span class="app-input-text">Напишите сообщение… или используйте <code>/file</code></span>
+                <span class="app-input-send">▶</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <footer class="site-footer">
+    © 2025&nbsp;Yagodka. Все права защищены.
+  </footer>
+</div>

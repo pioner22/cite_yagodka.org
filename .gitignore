@@ -1,0 +1,12 @@
+.DS_Store
+*.log
+*.bak
+
+# локальные мусорные каталоги
+node_modules/
+.vite/
+dist/
+
+# legacy копии (не публикуем)
+web 2/
+
