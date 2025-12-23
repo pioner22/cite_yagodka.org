@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <title>Yagodka — Безопасность</title>
+    <meta name="description" content="Коротко о безопасности Yagodka: транспорт, сессии, рекомендации." />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <link rel="icon" href="/web/icons/icon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip" href="#content">К содержанию</a>
+
+    <div class="page">
+      <section class="shell">
+        <header class="layout-header">
+          <div class="logo-mark">
+            <span class="logo-dot" aria-hidden="true"></span>
+            <a class="logo-text" href="/">Yagodka</a>
+          </div>
+          <nav class="nav" aria-label="Разделы">
+            <a class="nav-pill" href="/">Обзор</a>
+            <a class="nav-pill" href="/pages/shortcuts.html">Хоткеи</a>
+            <a class="nav-pill" href="/pages/pwa.html">PWA</a>
+            <a class="nav-pill nav-pill-active" href="/pages/security.html">Безопасность</a>
+          </nav>
+          <div class="nav-actions">
+            <a class="btn btn-ghost" href="/web/">Открыть клиент</a>
+            <a class="btn btn-primary" href="/pages/privacy.html">Политика</a>
+          </div>
+        </header>
+
+        <main id="content" class="doc">
+          <h1>Безопасность</h1>
+
+          <div class="doc-card">
+            <p>
+              Этот раздел — короткая памятка. Если вы администрируете сервер, используйте TLS и ограничивайте доступ к gateway так же строго, как к серверу.
+            </p>
+          </div>
+
+          <div class="doc-card">
+            <p><strong>Рекомендации</strong></p>
+            <ol class="steps">
+              <li>Используйте HTTPS/WSS (TLS) в продакшене.</li>
+              <li>Выбирайте длинные пароли и не переиспользуйте их.</li>
+              <li>Не вводите пароль на подозрительных доменах/зеркалах.</li>
+              <li>Регулярно обновляйте сервер и web‑клиент.</li>
+            </ol>
+          </div>
+
+          <div class="doc-card">
+            <p><strong>Ограничения WebKit (iOS)</strong></p>
+            <p>
+              На iOS в PWA/Safari часть поведения клавиатуры и «панелей» ввода задаётся системой и не может быть полностью отключена в веб‑приложении.
+            </p>
+          </div>
+        </main>
+      </section>
+
+      <footer class="site-footer">
+        © 2025&nbsp;Yagodka · <a class="link" href="/web/">Веб‑клиент</a> · <a class="link" href="/pages/privacy.html">Политика</a>
+      </footer>
+    </div>
+  </body>
+</html>

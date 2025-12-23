@@ -4,18 +4,184 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yagodka — личное пространство общения</title>
-  <meta name="description" content="Yagodka — мессенджер с досками, группами и файловыми отправками. Один сервер. Один клиент. Вся ваша команда — в одном окне." />
-  <link rel="stylesheet" href="assets/css/site.css" />
-  <script src="assets/js/main.js" defer></script>
+  <meta name="description" content="Yagodka — мессенджер с досками, группами и файловыми отправками. Keyboard‑first интерфейс в стиле терминала. Работает в браузере и как PWA." />
+
+  <meta property="og:title" content="Yagodka — личное пространство общения" />
+  <meta property="og:description" content="Мессенджер с досками, группами и файлами. Keyboard‑first. Web + PWA." />
+  <meta property="og:image" content="/web/icons/icon-512.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="/web/icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/web/icons/icon-192.png" sizes="192x192" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
 </head>
 <body>
-  <div id="app" class="page-loading">
-    Загружаем интерфейс Yagodka…
+  <a class="skip" href="#content">К содержанию</a>
+
+  <div class="page">
+    <section class="shell">
+      <header class="layout-header">
+        <div class="logo-mark">
+          <span class="logo-dot" aria-hidden="true"></span>
+          <a class="logo-text" href="/">Yagodka</a>
+        </div>
+        <nav class="nav" aria-label="Разделы">
+          <a class="nav-pill nav-pill-active" href="/">Обзор</a>
+          <a class="nav-pill" href="/pages/shortcuts.html">Хоткеи</a>
+          <a class="nav-pill" href="/pages/pwa.html">PWA</a>
+          <a class="nav-pill" href="/pages/security.html">Безопасность</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn btn-ghost" href="/web/">Открыть клиент</a>
+          <a class="btn btn-primary" href="/pages/pwa.html">Установить</a>
+        </div>
+      </header>
+
+      <main id="content" class="layout-main">
+        <div class="headline">
+          <div class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>Мессенджер для команды</span>
+          </div>
+          <h1 class="hero-title">
+            Ваше тихое место<br />
+            <span>для важных разговоров</span>
+          </h1>
+          <p class="hero-lead">
+            Yagodka сочетает личные беседы, групповые чаты и доски объявлений
+            в одном приложении. <span>Один сервер, один клиент</span> — и вся команда остаётся рядом.
+          </p>
+          <p class="hero-note">
+            Приложение доступно в браузере и как PWA: установите на телефон/планшет и пользуйтесь как обычным приложением.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="/web/">Запустить веб‑клиент</a>
+            <a class="btn btn-ghost" href="/pages/shortcuts.html">Посмотреть хоткеи</a>
+          </div>
+
+          <div class="feature-list">
+            <div class="feature">
+              <div class="feature-title">Keyboard‑first</div>
+              <div class="feature-text">
+                Хоткеи, быстрые переходы, предсказуемый фокус и минимализм.
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-title">Доски и чаты</div>
+              <div class="feature-text">
+                Общие каналы, группы и доски объявлений — всё в одном окне.
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-title">Файлы и медиа</div>
+              <div class="feature-text">
+                Отправка файлов, предпросмотр изображений, просмотр и скачивание.
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-title">PWA</div>
+              <div class="feature-text">
+                Установка на iOS/Android, офлайн‑дружелюбный кеш и тихие обновления.
+              </div>
+            </div>
+          </div>
+
+          <div class="links-row">
+            <a class="link" href="/pages/status.html">Статус сервиса →</a>
+            <a class="link" href="/pages/privacy.html">Конфиденциальность →</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Пример интерфейса">
+          <div class="app-card">
+            <aside class="app-sidebar">
+              <div class="app-section-title">Чаты</div>
+              <div class="chat-item chat-item-active">
+                <div class="chat-name">
+                  <span># общий</span>
+                  <span>12</span>
+                </div>
+                <div class="chat-preview">Обновления · файлы · доски</div>
+              </div>
+              <div class="chat-item">
+                <div class="chat-name">
+                  <span>@studio</span>
+                  <span>online</span>
+                </div>
+                <div class="chat-preview">Макеты · UX</div>
+              </div>
+              <div class="app-section-title" style="margin-top:0.4rem;">Доски</div>
+              <div class="chat-item">
+                <div class="chat-name">
+                  <span>Объявления</span>
+                  <span>3</span>
+                </div>
+                <div class="chat-preview">Релиз · расписание</div>
+              </div>
+            </aside>
+
+            <div class="app-chat">
+              <div class="app-chat-header">
+                <div class="app-chat-meta">
+                  <div class="app-chat-title"># общий</div>
+                  <div class="app-chat-subtitle">Keyboard‑first · PWA · файлы</div>
+                </div>
+                <div class="app-chat-actions" aria-hidden="true">
+                  <span>🔍</span>
+                  <span>⋮</span>
+                </div>
+              </div>
+
+              <div class="app-messages">
+                <div class="app-msg">
+                  <div class="app-msg-title">Admin</div>
+                  <div class="app-msg-text">
+                    Откройте веб‑клиент по кнопке сверху или по ссылке <span>/web/</span>.
+                  </div>
+                  <div class="app-msg-foot">
+                    <span>Сегодня · 10:24</span>
+                    <span>Доставлено</span>
+                  </div>
+                </div>
+                <div class="app-msg">
+                  <div class="app-msg-title">Design</div>
+                  <div class="app-msg-text">
+                    Хоткеи — на отдельной странице: <span>/pages/shortcuts.html</span>.
+                  </div>
+                  <div class="app-msg-foot">
+                    <span>Сегодня · 10:27</span>
+                    <span>Из web</span>
+                  </div>
+                </div>
+                <div class="app-msg app-msg-accent">
+                  <div class="app-msg-title">PWA</div>
+                  <div class="app-msg-text">
+                    Установите на телефон и пользуйтесь как приложением — инструкции в разделе <span>PWA</span>.
+                  </div>
+                  <div class="app-msg-foot">
+                    <span>Подсказка</span>
+                    <span>yagodka.org</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="app-input">
+                <div class="app-input-inner">
+                  <span class="app-input-icon" aria-hidden="true">＋</span>
+                  <span class="app-input-text">Напишите сообщение…</span>
+                  <span class="app-input-send" aria-hidden="true">▶</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <footer class="site-footer">
+      © 2025&nbsp;Yagodka · <a class="link" href="/web/">Веб‑клиент</a> · <a class="link" href="/pages/privacy.html">Политика</a>
+    </footer>
   </div>
-  <noscript>
-    <div class="page-loading">
-      Для просмотра этой страницы требуется включённый JavaScript.
-    </div>
-  </noscript>
 </body>
 </html>

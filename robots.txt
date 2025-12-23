@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /web/
+
+Sitemap: https://yagodka.org/sitemap.xml
