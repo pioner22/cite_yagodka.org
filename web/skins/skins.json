@@ -1,28 +1,12 @@
 {
   "skins": [
     {
-      "id": "default",
-      "title": "По умолчанию"
+      "id": "telegram-exact",
+      "title": "Telegram (точный)"
     },
     {
-      "id": "amber",
-      "title": "Amber"
-    },
-    {
-      "id": "cyberberry-crt",
-      "title": "Cyberberry Crt"
-    },
-    {
-      "id": "green",
-      "title": "Green"
-    },
-    {
-      "id": "showcase",
-      "title": "Showcase"
-    },
-    {
-      "id": "telegram-web",
-      "title": "Telegram Web"
+      "id": "yagodka-modern",
+      "title": "Yagodka Modern"
     }
   ]
 }

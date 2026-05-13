@@ -1,0 +1,1 @@
+var e=class{state;listeners=new Set;constructor(t){this.state=t}get(){return this.state}set(t){typeof t=="function"?this.state=t(this.state):this.state={...this.state,...t};for(const s of this.listeners)s()}subscribe(t){return this.listeners.add(t),()=>this.listeners.delete(t)}};export{e as t};

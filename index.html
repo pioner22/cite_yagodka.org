@@ -3,185 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yagodka — личное пространство общения</title>
-  <meta name="description" content="Yagodka — мессенджер с досками, группами и файловыми отправками. Keyboard‑first интерфейс в стиле терминала. Работает в браузере и как PWA." />
+  <title>Ягодка — мессенджер для команды</title>
+  <meta name="description" content="Ягодка — командный мессенджер с контактами, группами, каналами, файлами, медиа и web-клиентом. Скачать Android, macOS и CLI клиенты." />
 
-  <meta property="og:title" content="Yagodka — личное пространство общения" />
-  <meta property="og:description" content="Мессенджер с досками, группами и файлами. Keyboard‑first. Web + PWA." />
+  <meta property="og:title" content="Ягодка — мессенджер для команды" />
+  <meta property="og:description" content="Сайт проекта, клиенты для скачивания и отдельный вход в web-версию." />
   <meta property="og:image" content="/web/icons/icon-512.png" />
   <meta property="og:type" content="website" />
 
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" href="/web/icons/icon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="/web/icons/icon-192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/web/icons/icon-app-192.png" sizes="192x192" />
   <link rel="stylesheet" href="/assets/css/site.css" />
+  <script src="/assets/js/pwa-migration.js"></script>
 </head>
 <body>
   <a class="skip" href="#content">К содержанию</a>
 
-  <div class="page">
-    <section class="shell">
-      <header class="layout-header">
-        <div class="logo-mark">
-          <span class="logo-dot" aria-hidden="true"></span>
-          <a class="logo-text" href="/">Yagodka</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Ягодка">
+      <img class="brand-icon" src="/web/icons/icon-512.png" alt="" />
+      <span class="brand-text">Ягодка</span>
+    </a>
+    <nav class="site-nav" aria-label="Основные разделы">
+      <a href="#about">О проекте</a>
+      <a href="#features">Возможности</a>
+      <a href="#downloads">Клиенты</a>
+      <a href="/pages/status.html">Статус</a>
+      <a href="/web/">Web-клиент</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">командное общение без лишнего шума</p>
+        <h1 id="hero-title">Ягодка</h1>
+        <p class="hero-lead">
+          Мессенджер для рабочих групп, личных контактов, каналов и файлов.
+          Проект объединяет web-клиент, Android-приложение, desktop-сборку и CLI-клиент.
+        </p>
+        <div class="hero-actions" aria-label="Главные действия">
+          <a class="button button-primary" href="#downloads">Скачать клиент</a>
+          <a class="button button-secondary" href="/web/">Открыть web-версию</a>
         </div>
-        <nav class="nav" aria-label="Разделы">
-          <a class="nav-pill nav-pill-active" href="/">Обзор</a>
-          <a class="nav-pill" href="/pages/shortcuts.html">Хоткеи</a>
-          <a class="nav-pill" href="/pages/pwa.html">PWA</a>
-          <a class="nav-pill" href="/pages/security.html">Безопасность</a>
-        </nav>
-        <div class="nav-actions">
-          <a class="btn btn-ghost" href="/web/">Открыть клиент</a>
-          <a class="btn btn-primary" href="/pages/pwa.html">Установить</a>
-        </div>
-      </header>
-
-      <main id="content" class="layout-main">
-        <div class="headline">
-          <div class="eyebrow">
-            <span class="eyebrow-dot" aria-hidden="true"></span>
-            <span>Мессенджер для команды</span>
-          </div>
-          <h1 class="hero-title">
-            Ваше тихое место<br />
-            <span>для важных разговоров</span>
-          </h1>
-          <p class="hero-lead">
-            Yagodka сочетает личные беседы, групповые чаты и доски объявлений
-            в одном приложении. <span>Один сервер, один клиент</span> — и вся команда остаётся рядом.
-          </p>
-          <p class="hero-note">
-            Приложение доступно в браузере и как PWA: установите на телефон/планшет и пользуйтесь как обычным приложением.
-          </p>
-
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="/web/">Запустить веб‑клиент</a>
-            <a class="btn btn-ghost" href="/pages/shortcuts.html">Посмотреть хоткеи</a>
-          </div>
-
-          <div class="feature-list">
-            <div class="feature">
-              <div class="feature-title">Keyboard‑first</div>
-              <div class="feature-text">
-                Хоткеи, быстрые переходы, предсказуемый фокус и минимализм.
-              </div>
-            </div>
-            <div class="feature">
-              <div class="feature-title">Доски и чаты</div>
-              <div class="feature-text">
-                Общие каналы, группы и доски объявлений — всё в одном окне.
-              </div>
-            </div>
-            <div class="feature">
-              <div class="feature-title">Файлы и медиа</div>
-              <div class="feature-text">
-                Отправка файлов, предпросмотр изображений, просмотр и скачивание.
-              </div>
-            </div>
-            <div class="feature">
-              <div class="feature-title">PWA</div>
-              <div class="feature-text">
-                Установка на iOS/Android, офлайн‑дружелюбный кеш и тихие обновления.
-              </div>
-            </div>
-          </div>
-
-          <div class="links-row">
-            <a class="link" href="/pages/status.html">Статус сервиса →</a>
-            <a class="link" href="/pages/privacy.html">Конфиденциальность →</a>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="Пример интерфейса">
-          <div class="app-card">
-            <aside class="app-sidebar">
-              <div class="app-section-title">Чаты</div>
-              <div class="chat-item chat-item-active">
-                <div class="chat-name">
-                  <span># общий</span>
-                  <span>12</span>
-                </div>
-                <div class="chat-preview">Обновления · файлы · доски</div>
-              </div>
-              <div class="chat-item">
-                <div class="chat-name">
-                  <span>@studio</span>
-                  <span>online</span>
-                </div>
-                <div class="chat-preview">Макеты · UX</div>
-              </div>
-              <div class="app-section-title" style="margin-top:0.4rem;">Доски</div>
-              <div class="chat-item">
-                <div class="chat-name">
-                  <span>Объявления</span>
-                  <span>3</span>
-                </div>
-                <div class="chat-preview">Релиз · расписание</div>
-              </div>
-            </aside>
-
-            <div class="app-chat">
-              <div class="app-chat-header">
-                <div class="app-chat-meta">
-                  <div class="app-chat-title"># общий</div>
-                  <div class="app-chat-subtitle">Keyboard‑first · PWA · файлы</div>
-                </div>
-                <div class="app-chat-actions" aria-hidden="true">
-                  <span>🔍</span>
-                  <span>⋮</span>
-                </div>
-              </div>
-
-              <div class="app-messages">
-                <div class="app-msg">
-                  <div class="app-msg-title">Admin</div>
-                  <div class="app-msg-text">
-                    Откройте веб‑клиент по кнопке сверху или по ссылке <span>/web/</span>.
-                  </div>
-                  <div class="app-msg-foot">
-                    <span>Сегодня · 10:24</span>
-                    <span>Доставлено</span>
-                  </div>
-                </div>
-                <div class="app-msg">
-                  <div class="app-msg-title">Design</div>
-                  <div class="app-msg-text">
-                    Хоткеи — на отдельной странице: <span>/pages/shortcuts.html</span>.
-                  </div>
-                  <div class="app-msg-foot">
-                    <span>Сегодня · 10:27</span>
-                    <span>Из web</span>
-                  </div>
-                </div>
-                <div class="app-msg app-msg-accent">
-                  <div class="app-msg-title">PWA</div>
-                  <div class="app-msg-text">
-                    Установите на телефон и пользуйтесь как приложением — инструкции в разделе <span>PWA</span>.
-                  </div>
-                  <div class="app-msg-foot">
-                    <span>Подсказка</span>
-                    <span>yagodka.org</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="app-input">
-                <div class="app-input-inner">
-                  <span class="app-input-icon" aria-hidden="true">＋</span>
-                  <span class="app-input-text">Напишите сообщение…</span>
-                  <span class="app-input-send" aria-hidden="true">▶</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
+      </div>
+      <img class="hero-image" src="/web/icons/icon-512.png" alt="Логотип Ягодки" />
     </section>
 
-    <footer class="site-footer">
-      © 2025&nbsp;Yagodka · <a class="link" href="/web/">Веб‑клиент</a> · <a class="link" href="/pages/privacy.html">Политика</a>
-    </footer>
-  </div>
+    <section id="about" class="section section-split" aria-labelledby="about-title">
+      <div>
+        <p class="section-kicker">что это за проект</p>
+        <h2 id="about-title">Один рабочий контур для общения и быстрых действий</h2>
+      </div>
+      <p>
+        Ягодка помогает держать переписку, группы, каналы, файлы и медиа в одном месте.
+        Web-версия подходит для быстрого входа из браузера, а отдельные клиенты удобны для
+        постоянной работы на телефоне, desktop или в терминале.
+      </p>
+    </section>
+
+    <section id="features" class="section" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="section-kicker">возможности</p>
+        <h2 id="features-title">Что уже есть в Ягодке</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Контакты и группы</h3>
+          <p>Личные диалоги, групповые пространства и быстрый доступ к людям внутри команды.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Каналы</h3>
+          <p>Отдельная поверхность для новостей, объявлений и информации, которую нужно сохранить.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Файлы и медиа</h3>
+          <p>Отправка файлов, предпросмотр изображений, аудио, видео и запись медиа внутри чата.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Звонки</h3>
+          <p>Аудио- и видеосценарии для рабочих разговоров без переключения между инструментами.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Web и приложения</h3>
+          <p>Можно зайти через браузер или установить клиент под нужный рабочий сценарий.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Обновления</h3>
+          <p>Клиенты собираются из одного проекта, поэтому интерфейс и поведение остаются согласованными.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="downloads" class="section downloads-section" aria-labelledby="downloads-title">
+      <div class="section-heading">
+        <p class="section-kicker">клиенты</p>
+        <h2 id="downloads-title">Скачать или открыть в браузере</h2>
+        <p class="section-note">
+          Android APK и desktop ZIP сейчас предназначены для проверки. Для публичного релиза
+          понадобится отдельная подписанная сборка.
+        </p>
+      </div>
+
+      <div class="download-grid">
+        <article class="download-card">
+          <div class="download-meta">
+            <span class="platform">Android</span>
+            <span class="state state-test">debug APK</span>
+          </div>
+          <h3>Android-клиент</h3>
+          <p>Тестовая сборка для установки вручную на Android-устройство.</p>
+          <a class="button button-primary" href="/downloads/android/yagodka-android-debug.apk" download>Скачать APK</a>
+        </article>
+
+        <article class="download-card">
+          <div class="download-meta">
+            <span class="platform">macOS</span>
+            <span class="state state-test">ZIP</span>
+          </div>
+          <h3>Desktop-клиент</h3>
+          <p>Локальная desktop-сборка для проверки. Перед публичной публикацией нужна подпись.</p>
+          <a class="button button-secondary" href="/downloads/macos/yagodka-macos-x64.zip" download>Скачать ZIP</a>
+        </article>
+
+        <article class="download-card">
+          <div class="download-meta">
+            <span class="platform">CLI</span>
+            <span class="state">archive</span>
+          </div>
+          <h3>Консольный клиент</h3>
+          <p>Архив клиента для терминала и ручного обновления.</p>
+          <a class="button button-secondary" href="/downloads/cli/yagodka-cli-client.tar.gz" download>Скачать CLI</a>
+        </article>
+
+        <article class="download-card download-card-web">
+          <div class="download-meta">
+            <span class="platform">Web</span>
+            <span class="state state-live">online</span>
+          </div>
+          <h3>Web-клиент</h3>
+          <p>Отдельный вход в мессенджер без скачивания приложения.</p>
+          <a class="button button-primary" href="/web/">Открыть web-версию</a>
+        </article>
+      </div>
+
+      <p class="checksum-note">
+        Контрольные суммы сборок публикуются в <a href="/downloads/checksums.txt">checksums.txt</a>.
+        Текущий статус клиентов и версий — на странице <a href="/pages/status.html">Статус</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Ягодка</span>
+    <a href="/pages/privacy.html">Конфиденциальность</a>
+    <a href="/pages/security.html">Безопасность</a>
+    <a href="/pages/status.html">Статус</a>
+    <a href="/web/">Web-клиент</a>
+  </footer>
 </body>
 </html>

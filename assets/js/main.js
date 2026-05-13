@@ -20,15 +20,26 @@
     if (!root) {
       return;
     }
-    root.innerHTML = content;
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(String(content || ''), 'text/html');
+    var nodes = [];
+    var bodyNodes = doc && doc.body ? doc.body.childNodes : [];
+    for (var i = 0; i < bodyNodes.length; i += 1) {
+      nodes.push(bodyNodes[i].cloneNode(true));
+    }
+    root.replaceChildren.apply(root, nodes);
   }
 
   function showError(message) {
-    inject(
-      '<div class="page-loading">' +
-        (message || 'Не удалось загрузить страницу. Попробуйте обновить позже.') +
-      '</div>'
-    );
+    var root = document.getElementById('app');
+    var box;
+    if (!root) {
+      return;
+    }
+    box = document.createElement('div');
+    box.className = 'page-loading';
+    box.textContent = message || 'Не удалось загрузить страницу. Попробуйте обновить позже.';
+    root.replaceChildren(box);
   }
 
   function resolvePageName() {
