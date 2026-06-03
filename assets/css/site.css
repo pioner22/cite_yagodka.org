@@ -175,6 +175,23 @@ main {
   margin-top: 32px;
 }
 
+.release-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  max-width: 640px;
+  margin: 18px 0 0;
+  color: #506052;
+  font-size: 13px;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
+.release-strip strong {
+  color: var(--ink);
+  font-weight: 860;
+}
+
 .hero-image {
   display: none;
 }
@@ -293,6 +310,19 @@ h2 {
 
 .download-card p {
   flex: 1;
+}
+
+.download-card .download-version {
+  flex: none;
+  margin-top: -4px;
+  color: #4f5f58;
+  font-size: 13px;
+  font-weight: 760;
+}
+
+.download-version strong {
+  color: var(--ink);
+  font-weight: 860;
 }
 
 .download-meta {
