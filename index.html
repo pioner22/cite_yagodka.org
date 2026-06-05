@@ -32,28 +32,71 @@
       <a href="/pages/status.html">Статус</a>
       <a class="nav-cta" href="/web/">Web-клиент</a>
     </nav>
+    <div class="header-actions" aria-label="Быстрые действия">
+      <a class="header-web" href="/web/">Web</a>
+      <details class="mobile-menu">
+        <summary aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+        <nav class="mobile-menu-panel" aria-label="Мобильное меню">
+          <a href="#about">О проекте</a>
+          <a href="#features">Возможности</a>
+          <a href="#downloads">Клиенты</a>
+          <a href="/pages/status.html">Статус</a>
+          <a href="/web/">Web-клиент</a>
+        </nav>
+      </details>
+    </div>
   </header>
 
   <main id="content">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
-        <p class="eyebrow">командное общение без лишнего шума</p>
+        <p class="eyebrow">рабочий мессенджер без лишнего шума</p>
         <h1 id="hero-title">Ягодка</h1>
         <p class="hero-lead">
-          Мессенджер для рабочих групп, личных контактов, каналов и файлов.
-          Проект объединяет web-клиент, Android-приложение, desktop-сборку и CLI-клиент.
+          Командные чаты, личные контакты, каналы и файлы в одном аккуратном рабочем контуре.
         </p>
         <div class="hero-actions" aria-label="Главные действия">
           <a class="button button-primary" href="#downloads">Скачать клиент</a>
           <a class="button button-secondary" href="/web/">Открыть web-версию</a>
         </div>
         <p class="release-strip" aria-label="Текущие версии">
-          <span>Web <strong data-yagodka-web-version>0.1.864-fa5667842477</strong></span>
-          <span>Android <strong data-yagodka-android-version>1.0.23 (code 24)</strong></span>
-          <span>macOS <strong data-yagodka-macos-version>0.1.864</strong></span>
+          <span>Web <strong data-yagodka-web-version-short>0.1.864</strong></span>
+          <span>Android <strong data-yagodka-android-version-short>1.0.23</strong></span>
+          <span>macOS <strong data-yagodka-macos-version-short>0.1.864</strong></span>
         </p>
       </div>
-      <img class="hero-image" src="/web/icons/icon-512.png" alt="Логотип Ягодки" />
+      <div class="hero-device" aria-label="Пример интерфейса Ягодки">
+        <div class="hero-device-top">
+          <img src="/web/icons/icon-app-192.png" alt="" />
+          <div>
+            <strong>Чат команды</strong>
+            <span>online</span>
+          </div>
+        </div>
+        <div class="hero-device-feed">
+          <div class="hero-msg hero-msg-in">
+            <span class="hero-msg-name">Генерал</span>
+            <p>Договорились: макет, файлы и статусы держим здесь.</p>
+            <span class="hero-msg-time">14:42</span>
+          </div>
+          <div class="hero-msg hero-msg-out">
+            <p>Принял. Обновлю сборку и проверю на телефоне.</p>
+            <span class="hero-msg-time">14:43</span>
+          </div>
+          <div class="hero-file-row">
+            <span>APK</span>
+            <strong>готов к проверке</strong>
+          </div>
+        </div>
+        <div class="hero-device-input">
+          <span>Написать сообщение</span>
+          <b>↗</b>
+        </div>
+      </div>
     </section>
 
     <section id="about" class="section section-split" aria-labelledby="about-title">
