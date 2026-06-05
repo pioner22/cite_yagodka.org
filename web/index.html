@@ -1,50 +1,60 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" class="app-frame-booting">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#0b0f14" />
+    <meta name="theme-color" content="#eaf5f0" />
     <meta name="application-name" content="Yagodka" />
+    <meta name="yagodka-build-id" content="0.1.864-fa5667842477" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Yagodka" />
-    <link rel="manifest" href="./manifest.webmanifest?v=0.1.799-5b8e1ccd4f3e" />
-    <link rel="icon" href="./icons/icon.svg?v=0.1.799-5b8e1ccd4f3e" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./icons/icon-app-192.png?v=0.1.799-5b8e1ccd4f3e" sizes="192x192" />
-    <link rel="mask-icon" href="./icons/icon.svg?v=0.1.799-5b8e1ccd4f3e" color="#0b0f14" />
+    <link rel="manifest" href="./manifest.webmanifest?v=0.1.864-fa5667842477" />
+    <link rel="icon" href="./icons/icon.svg?v=0.1.864-fa5667842477" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icons/icon-app-192.png?v=0.1.864-fa5667842477" sizes="192x192" />
+    <link rel="mask-icon" href="./icons/icon.svg?v=0.1.864-fa5667842477" color="#0b0f14" />
     <title>Yagodka</title>
-    <script type="module" crossorigin src="./assets/index-3KaLXTz5.js"></script>
+    <script type="module" crossorigin src="./assets/index-BetNzP0k.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-cYrLTzkK.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-chat-host-deferred-C_v575Qj.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-chat-surface-secondary-DM2v1wqV.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-context-actions-KI1tDYpW.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-debug-Dh56uoOS.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-chat-surface-media-7FLqRcAv.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-files-CKjHvgoZ.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-handle-server-message-yaVlnrQ_.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-nav-deferred-Dgi3Mv8H.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-emoji-B-04CZ9x.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-history-CgI0d_6k.js">
-    <link rel="modulepreload" crossorigin href="./assets/app-navigation-DR4bwTJJ.js">
-    <link rel="modulepreload" crossorigin href="./assets/boot-helpers-EjHzCJJG.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-Cx0L6GTA.css">
+    <link rel="modulepreload" crossorigin href="./assets/app-chat-host-deferred-Cx3gp6zx.js">
+    <link rel="modulepreload" crossorigin href="./assets/app-chat-surface-secondary-C7iD9ELx.js">
+    <link rel="modulepreload" crossorigin href="./assets/app-context-actions-DZVQgMlX.js">
+    <link rel="modulepreload" crossorigin href="./assets/app-debug-sxV9JxGV.js">
+    <link rel="modulepreload" crossorigin href="./assets/app-chat-surface-media-BOwmvil3.js">
+    <link rel="modulepreload" crossorigin href="./assets/app-files-BIW-sKCQ.js">
+    <link rel="modulepreload" crossorigin href="./assets/app-handle-server-message-D_w7whot.js">
+    <link rel="modulepreload" crossorigin href="./assets/app-nav-deferred-C0e_d7wH.js">
+    <link rel="modulepreload" crossorigin href="./assets/app-emoji-D7vWOS7O.js">
+    <link rel="modulepreload" crossorigin href="./assets/app-history-DfVEnXH2.js">
+    <link rel="modulepreload" crossorigin href="./assets/app-navigation-Bp8g5v21.js">
+    <link rel="modulepreload" crossorigin href="./assets/boot-helpers-1EfEcC4I.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-Bgiw_6_w.css">
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="app-frame app-frame-booting">
       <div class="boot" aria-live="polite">
-        <img class="boot-logo" src="./icons/icon.svg" alt="" />
-        <div class="boot-brand">Ягодка</div>
-        <div class="boot-sub" id="boot-status">Загрузка…</div>
-        <div class="boot-bar" aria-hidden="true"></div>
+        <div class="boot-frame">
+          <img class="boot-logo" src="./icons/icon.svg" alt="" />
+          <div class="boot-kicker">Corporate Messenger</div>
+          <div class="boot-brand">Yagodka</div>
+          <div class="boot-sub" id="boot-status">Проверяем версию клиента</div>
+          <div class="boot-version" id="boot-version" data-build-version="0.1.864-fa5667842477">Web 0.1.864-fa5667842477</div>
+          <div class="boot-bar" aria-hidden="true"></div>
+        </div>
       </div>
     </div>
     <style>
       body {
         margin: 0;
-        background: var(--body-bg, var(--app-bg, #0b0f14));
-        color: var(--app-text, #e6edf3);
+        --app-host-canvas-bg: #eaf5f0;
+        --app-frame-bg: var(--app-host-canvas-bg);
+        --app-frame-safe-bg: var(--app-host-canvas-bg);
+        --app-shell-bottom-spill: 0px;
+        background: var(--app-frame-bg, var(--body-bg, var(--app-bg, #eaf5f0)));
+        background-color: var(--app-host-canvas-bg);
+        color: var(--app-text, #18211d);
         font:
           500 16px/1.35 ui-sans-serif,
           system-ui,
@@ -54,98 +64,108 @@
           Arial,
           sans-serif;
       }
+      html.app-frame-booting,
+      html.app-frame-booting body {
+        --safe-area-bg: #eaf5f0;
+        --app-host-canvas-bg: #eaf5f0;
+        --app-frame-bg: #eaf5f0;
+        --app-frame-safe-bg: #eaf5f0;
+        background: #eaf5f0;
+        background-color: #eaf5f0;
+      }
       #app {
-        position: relative;
-        min-height: 100dvh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: auto;
+        min-height: 0;
+        height: 100vh;
+        height: 100dvh;
+        overflow: hidden;
+        background: var(--app-frame-bg, #eaf5f0);
+        background-color: var(--app-host-canvas-bg);
+        isolation: isolate;
       }
       .boot {
         position: absolute;
         inset: 0;
         display: grid;
         place-content: center;
-        padding: 20px;
-        gap: 10px;
-        text-align: center;
-        background: var(--body-bg, var(--app-bg, #0b0f14));
-        transition:
-          opacity 240ms ease,
-          transform 240ms ease,
-          filter 240ms ease;
-        will-change: opacity, transform, filter;
+        padding: 24px;
+        text-align: left;
+        background: var(--app-frame-bg, #eaf5f0);
+        background-color: var(--app-host-canvas-bg);
+        z-index: 2;
+        transition: opacity 180ms ease;
+        will-change: opacity;
       }
       .boot.boot-out {
         opacity: 0;
-        transform: scale(1.02);
-        filter: blur(10px);
         pointer-events: none;
       }
+      .boot-frame {
+        width: min(360px, calc(100vw - 48px));
+        display: grid;
+        gap: 10px;
+        padding: 24px;
+        border: 1px solid rgba(37, 52, 45, 0.12);
+        border-radius: 8px;
+        background: #fbfcfd;
+        box-shadow: 0 24px 52px rgba(35, 48, 41, 0.14);
+      }
       .boot-logo {
-        width: 72px;
-        height: 72px;
-        margin: 0 auto 2px;
-        opacity: 0.94;
-        filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.25));
-        animation: boot-pulse 1.8s ease-in-out infinite;
+        width: 48px;
+        height: 48px;
+        opacity: 0.96;
+      }
+      .boot-kicker {
+        margin-top: 6px;
+        color: #66736d;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
       }
       .boot-brand {
+        color: #18211d;
         font-weight: 800;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        font-size: 18px;
+        letter-spacing: 0;
+        font-size: 24px;
+        line-height: 1.1;
       }
       .boot-sub {
-        opacity: 0.72;
+        min-height: 20px;
+        color: #66736d;
         font-size: 14px;
+        line-height: 1.4;
+      }
+      .boot-version {
+        color: #4f5f58;
+        font-size: 12px;
+        font-weight: 760;
+        line-height: 1.3;
       }
       .boot-bar {
-        width: min(280px, 72vw);
-        height: 2px;
-        background: rgba(255, 255, 255, 0.14);
-        border-radius: 999px;
-        overflow: hidden;
+        width: 100%;
+        height: 3px;
+        margin-top: 4px;
+        border-radius: 2px;
+        background: linear-gradient(90deg, #2563eb 0 34%, rgba(148, 163, 184, 0.28) 34% 100%);
         position: relative;
-      }
-      .boot-bar::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        transform: translateX(-60%);
-        background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.85), transparent);
-        animation: boot-slide 1.1s ease-in-out infinite;
-      }
-      @keyframes boot-pulse {
-        0%,
-        100% {
-          transform: translateY(0) scale(1);
-          opacity: 0.94;
-        }
-        50% {
-          transform: translateY(-2px) scale(1.01);
-          opacity: 1;
-        }
-      }
-      @keyframes boot-slide {
-        0% {
-          transform: translateX(-60%);
-        }
-        50% {
-          transform: translateX(60%);
-        }
-        100% {
-          transform: translateX(160%);
-        }
       }
       @media (prefers-reduced-motion: reduce) {
         .boot {
           transition: none;
         }
-        .boot-bar::before {
-          animation: none;
-          opacity: 0.55;
-          transform: none;
+      }
+      @media (max-width: 420px) {
+        .boot {
+          padding: 16px;
         }
-        .boot-logo {
-          animation: none;
+        .boot-frame {
+          width: min(100%, calc(100vw - 32px));
+          padding: 18px;
         }
       }
     </style>
